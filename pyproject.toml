@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hackalem-wind-forecast"
+version = "0.2.0"
+description = "Auditable agentic wind-power forecasting application"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["python-dotenv>=1.0,<2"]
+
+[project.optional-dependencies]
+app = ["streamlit>=1.64,<2"]
+openai = ["openai>=2,<3"]
+weather = ["eccodes>=2.39,<3"]
+ml = ["scikit-learn>=1.6,<2"]
+local = ["catboost==1.2.10", "scikit-learn==1.7.2", "pandas>=2.2,<3", "numpy>=1.26,<3", "joblib>=1.4,<2"]
+dev = ["ruff>=0.9,<1"]
+all = ["streamlit>=1.64,<2", "openai>=2,<3", "eccodes>=2.39,<3", "scikit-learn>=1.6,<2", "ruff>=0.9,<1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"wind_forecast.weather" = ["locations.json"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
