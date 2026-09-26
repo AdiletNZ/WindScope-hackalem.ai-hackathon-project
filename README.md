@@ -1,6 +1,6 @@
 # WindScope — wind-power forecasting for HackAlem AI
 
-WindScope was built by team **imokazakhstan** at [HackAlem AI](https://hackalem.ai/), which the organizers describe as the world's largest Agentic AI hackathon. This repository is our solution to the [wind farm generation forecasting case](docs/HackAlem%20AI_%20Agentic%20AI%20Case.pdf).
+WindScope was built by team **imokazakhstan** at [HackAlem AI](https://hackalem.ai/), which is the world's largest Agentic AI hackathon at the moment. This repository is our solution to the [wind farm generation forecasting case](docs/HackAlem%20AI_%20Agentic%20AI%20Case.pdf).
 
 Team Members:
 1) Adilet Zauytkhan
